@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<title>Recipe Ninja</title>
+	<link rel="shortcut icon" href="favicon.ico">
+	<link rel="stylesheet" href="styles/normalize.css">
+	<link rel="stylesheet" href="create_account.css">
+	<script src="create_account.js"></script>
+</head>
+
+<body>
+	<header>
+		<h1>Create Account</h1>
+		<h2>Find, save, and recreate your favorite recipes!</h2>
+	</header>
+	<main>
+		<div class="create">
+			<form class="createForm" method="post" action="create_account.php">
+				<img src="images/logo.jpeg" alt="logo" class="logo"> <br>
+				<input id="fname" type="text" align="center" placeholder="First Name" name="fname" required><span
+					id="error1"> *</span> <br>
+				<input id="lname" type="text" align="center" placeholder="Last Name" name="lname" required><span
+					id="error2"> *</span> <br>
+				<input id="email" type="text" align="center" placeholder="Email Address" name="email" required><span
+					id="error3"> *</span> <br>
+				<input id="user" type="text" align="center" placeholder="Username" name="user" required><span
+					id="error4"> *</span> <br>
+				<input id="pass" type="password" align="center" placeholder="Password" name="pass" required><span
+					id="error5"> *</span> <br>
+				<input id="createacct" type="submit" class="button" align="center" name="create"
+					value="Create Account"><br>
+			</form>
+			<form action="login.html">
+				<p><em> Already have an account? <em></p>
+				<button class="submit" type="submit" align="center">Sign in</button> <br>
+			</form>
+		</div>
+	</main>
+</body>
+
+
+</html>

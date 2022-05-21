@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<title>Recipe Ninja</title>
+	<link rel="shortcut icon" href="favicon.ico">
+	<link rel="stylesheet" href="styles/normalize.css">
+</head>
+
+<body>
+	<header>
+		<h1>Profile Info</h1>
+		<label>&nbsp;</label>
+		<form action="logout.php" method="post">
+			<input type="submit" id="button" name="logout" value="Logout">
+		</form>
+		<h2><em>Find, save, and recreate your favorite recipes</em></h2>
+	</header>
+	<nav id="nav_menu">
+		<ul>
+			<li><a href="explore.php">Explore</a></li>
+			<li><a href="my_page.php">My Page</a></li>
+			<li><a class="current" href="profile_info.html">My Profile</a></li>
+			<li><a href="tips_tricks.html">Tips & Tricks</a></li>
+			<li><a href="about.html">About</a></li>
+			<li class="lastitem"><a href="donation.html">Donate!</a></li>
+		</ul>
+	</nav>
+	<main>
+		<form class="profileForm">
+			<h1> My Profile </h1>
+			<img src="images/logo.jpeg" alt="addPicture" class="addPicture"> <br>
+			<h2> Name: </h2>
+			<h2> Email: </h2>
+			<h2> About Me: </h2>
+			<textarea id="aboutMe" name="About Me" rows="10" cols="100"
+				placeholder="Tell us about yourself..."></textarea> <br>
+			<button class="edit" type="submit" align="center">Edit</button>
+			<button class="save" type="submit" align="center">Save</button> <br>
+		</form>
+	</main>
+</body>
+
+</html>

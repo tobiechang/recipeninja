@@ -1,0 +1,70 @@
+<?php 
+$dsn = 'mysql:host=localhost;dbname=recipe_ninja_database';
+	$username = 'root';
+	$password = '';
+	
+	try {
+		$db= new PDO($dsn, $username, $password);
+        echo "connected to nin data";
+	} 
+	catch (PDOException $e) {
+		$error= $e->getMessage();
+		echo '<p> Unable to connect to databsae:' .$error;
+		exit();
+	}
+	
+?>
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<title>Recipe Ninja</title>
+	<link rel="shortcut icon" href="favicon.ico">
+	<link rel="stylesheet" href="styles/normalize.css">
+	<link rel="stylesheet" href="explore.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+
+<body>
+	<header>
+		<h1>Explore!</h1>
+		<label>&nbsp;</label>
+		<input type="button" id="button" value="Logout">
+		<h2><em>Find, save, and recreate your favorite recipes</em></h2>
+	</header>
+	<nav id="nav_menu">
+		<ul>
+			<li><a class="current" href="explore.html">Explore</a></li>
+			<li><a href="my_page.php">My Page</a></li>
+			<li><a href="profile_info.html">My Profile</a></li>
+			<li><a href="tips_tricks.html">Tips & Tricks</a></li>
+			<li><a href="about.html">About</a></li>
+			<li class="lastitem"><a href="donation.html">Donate!</a></li>
+		</ul>
+	</nav>
+	<main>
+		<form class="search" action="/action_page.php" style="margin:auto;">
+			<input type="text" placeholder="Search All Recipes..." name="search">
+			<button type="submit"><i class="fa fa-search"></i></button>
+		</form>
+		<div class="recipes">
+			<?php
+			$conn-> mysqli_connect("localhost", "root", "");
+			$sql = "SELECT * FROM USERS"; 
+			$result = $conn->query("sql");
+			
+			if($result->num_rows > 0) {
+				while (row = $result-> fetch_assoc()) {
+					echo "<h3></h3>".$row;
+				}
+			} 
+		?>
+		</div>
+
+	</main>
+</body>
+
+</html>

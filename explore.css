@@ -1,0 +1,186 @@
+* {
+	font-family: sans-serif;
+}
+
+img {
+	margin: 60px;
+}
+
+header {
+	background-image: url(images/cook.gif);
+	border: 3px solid lightgray;
+	padding-right: 1em;
+	padding-left: 1em;
+	margin: 0em;
+	text-align: center;
+	color: #AB7964;
+}
+
+label {
+	font-family: sans-serif;
+}
+
+.categories {
+	font-family: sans-serif;
+	letter-spacing: 1px;
+	background: rgba(236, 236, 236, 0.815);
+	font-size: 150%;
+}
+
+header img {
+	float: left;
+}
+
+body {
+	background-color: lightgray;
+	min-height: 1000px;
+	width: 100%;
+}
+
+header h1 {
+	float: left;
+	color: #AB7964;
+	font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+	font-size: 400%;
+	font-weight: bolder;
+}
+
+header h2 {
+	clear: left;
+}
+
+header input {
+	margin: 1em;
+	width: 100px;
+	height: 50px;
+	float: right;
+	border: 3px solid #AB7964;
+}
+
+header input:hover {
+	background-color: darkgray;
+}
+
+div div {
+	text-align: center;
+	float: left;
+	width: 35%;
+	background-color: white;
+	margin: 1em;
+	margin-left: 6em;
+	padding: 2em;
+	border: 3px solid #7FB7A4;
+	border-radius: 20px;
+}
+
+main {
+	text-align: center;
+}
+
+main h1 {
+	color: #AB7964;
+}
+
+#nav_menu ul {
+	list-style: none;
+	position: relative;
+	margin: 0;
+	padding: 0;
+}
+
+#nav_menu ul li {
+	float: left;
+}
+
+#nav_menu ul ul {
+	display: none;
+	position: absolute;
+	top: 100%;
+}
+
+#nav_menu ul ul li {
+	float: none;
+}
+
+#nav_menu ul li:hover>ul {
+	display: block;
+}
+
+#nav_menu>ul::after {
+	content: "";
+	display: block;
+	clear: both;
+}
+
+#nav_menu ul li a {
+	margin: 0;
+	width: 240px;
+	text-align: center;
+	border: 2px solid lightgray;
+	display: block;
+	padding: 1em;
+	text-decoration: none;
+	background-color: #A1D7BC;
+	color: white;
+	font-weight: bold;
+}
+
+#nav_menu ul li a.current {
+	color: black;
+}
+
+#nav_menu ul li a:hover, #nav_menu ul li a:focus {
+	background-color: #7FB7A4;
+}
+
+form.search input[type=text] {
+	margin-top: 5px;
+	padding: 10px;
+	font-size: 17px;
+	border: 1px solid grey;
+	float: center;
+	width: 70%;
+	background: #f1f1f1;
+}
+
+form.search button {
+	float: center;
+	margin-top: 8px;
+	width: 15%;
+	padding: 10px;
+	background: #7FB7A4;
+	color: white;
+	font-size: 17px;
+	border: 1px solid grey;
+	border-left: none;
+	cursor: pointer;
+}
+
+img {
+	margin: 40px;
+}
+
+input {
+	font-weight: 700;
+	font-size: 14px;
+	letter-spacing: 1px;
+	background: rgba(236, 236, 236, 0.815);
+	padding: 10px 20px;
+	border: none;
+	border-radius: 20px;
+	outline: none;
+	box-sizing: border-box;
+	border: 2px solid rgba(0, 0, 0, 0.02);
+	margin-bottom: 10px;
+}
+
+footer {
+	background-image: linear-gradient(to bottom, #7FB7A4 0%, #B8CDB1 100%);
+	border: 3px solid lightgray;
+	padding-right: 1em;
+	padding-left: 1em;
+	margin: 0em;
+	text-align: center;
+	color: #4F4F52;
+	margin-top: 275%;
+}

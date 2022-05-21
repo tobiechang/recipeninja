@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<title>Recipe Ninja</title>
+	<link rel="shortcut icon" href="favicon.ico">
+	<link rel="stylesheet" href="styles/normalize.css">
+	<link rel="stylesheet" href="login_form.css">
+	<script src="login.js"></script>
+</head>
+
+<body>
+	<header>
+		<h1>Login!</h1>
+		<h2>Find, save, and recreate your favorite recipes!</h2>
+	</header>
+	<main>
+		<div class=login>
+			<form class="loginForm" method="POST" action="login.php">
+				<img src="images/logo.jpeg" alt="logo" class="logo"><br>
+				<input id="user" class="user" type="text" align="center" placeholder="Username" name="user"
+					required><span id="error1">*</span> <br>
+				<input id="pass" class="pass" type="password" align="center" placeholder="Password" name="pass"
+					required><span id="error2">*</span> <br>
+				<input type="submit" id="login" class="button" align="center" name="login" value="Sign In"><br>
+			</form>
+			<p><em> Don't have an account? </em></p>
+			<form action="create_account.html">
+				<button class="button" type="submit" align="center">Register</button> <br>
+			</form>
+		</div>
+	</main>
+</body>
+
+</html>
